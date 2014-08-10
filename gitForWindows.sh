@@ -1,4 +1,2 @@
 PROMPT_COMMAND='history -a'
-alias gitstat='git status -uno'
-alias gcm='git commit -m'
-alias gdc='git --no-pager diff --color-words'
+. ~/configs/gitGeneral.sh
