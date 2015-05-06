@@ -7,8 +7,8 @@ alias gap='git add --patch'
 
 # Create a fancy promt
 function color_my_prompt {
-    local __user_and_host="\[\033[01;32m\]\u@\h"
-    local __cur_location="\[\033[01;34m\]\w"
+    local __user_and_host="\[\033[32m\]\u@\h"
+    local __cur_location="\[\033[33m\]\w"
     local __git_branch_color="\[\033[31m\]"
     #local __git_branch="\`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`"
     local __git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
