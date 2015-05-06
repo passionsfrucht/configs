@@ -3,6 +3,7 @@ alias gitstat='git status -uno'
 alias gcm='git commit -m'
 alias gdc='git --no-pager diff --color-words'
 alias gam='git add -u'
+alias gap='git add --patch'
 
 # Create a fancy promt
 function color_my_prompt {
