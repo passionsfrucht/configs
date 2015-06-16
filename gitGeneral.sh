@@ -17,3 +17,13 @@ function color_my_prompt {
     export PS1="$__user_and_host $__cur_location $__git_branch_color$__git_branch$__prompt_tail$__last_color "
 }
 color_my_prompt
+
+function cleanbranch
+{
+	br=$1
+	echo clean up $br
+	git checkout $br || { echo 'my_command failed' ; return 1; } 
+	git rebase master ||  { echo 'my_command failed' ; return 1; } 	
+	git checkout master ||  { echo 'my_command failed' ; return 1; }  
+	git branch -d $br
+}
