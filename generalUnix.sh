@@ -1,5 +1,5 @@
 
-alias qpython='ipython qtconsole --pylab=inline'
+alias qpython='ipython qtconsole'
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
