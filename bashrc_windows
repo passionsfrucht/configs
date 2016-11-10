@@ -71,3 +71,11 @@ fi
 if [ -f ~/configs/addPWDToTeminal.sh ]; then
     . ~/configs/addPWDToTeminal.sh
 fi
+
+if [ -f ~/configs/sol.dark ]; then
+    . ~/configs/sol.dark
+fi
+
+
+
+
