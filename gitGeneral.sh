@@ -27,3 +27,8 @@ function cleanbranch
 	git checkout master ||  { echo 'my_command failed' ; return 1; }  
 	git branch -d $br
 }
+
+# nicer colors, should be used everywhere maybe
+if [ -f ~/configs/sol.dark ]; then
+	. ~/configs/sol.dark
+fi
