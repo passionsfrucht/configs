@@ -1,4 +1,4 @@
-setterm='\e]0;$PWD\a'
+setterm='\e]0;\u@\h: $PWD\a'
 export PS1=$setterm$PS1
 
 

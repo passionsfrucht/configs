@@ -121,3 +121,8 @@ fi
 if [ -f ~/configs/gitGeneral.sh ]; then
 	. ~/configs/gitGeneral.sh
 fi
+
+if [ -n "$enforce_path_terminal" ]; then
+	. ~/configs/addPWDToTeminal.sh
+fi
+
